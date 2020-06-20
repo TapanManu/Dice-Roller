@@ -18,14 +18,7 @@ class MainActivity : AppCompatActivity(),AccelerometerListener{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val stopButton : Button = findViewById(R.id.stopButton)
-        stopButton.setOnClickListener{
-            onDestroy()
-        }
-        val startButton : Button = findViewById(R.id.startButton)
-        startButton.setOnClickListener{
-            onResume()
-        }
+
     }
     override fun onAccelerationChanged(x: Float, y: Float, z: Float) {
         // TODO Auto-generated method stub
